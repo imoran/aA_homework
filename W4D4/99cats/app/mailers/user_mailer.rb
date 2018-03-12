@@ -7,10 +7,10 @@ class UserMailer < ApplicationMailer
     mail(to: user.email, subject: 'hello! (:')
   end
 
-  def create
-    msg = UserMailer.welcome_email(@user)
-    msg.deliver_now
-
-    render :root
-  end
+  # def create
+  #   msg = UserMailer.welcome_email(@user)
+  #   msg.deliver_now
+  #
+  #   render :root
+  # end
 end
